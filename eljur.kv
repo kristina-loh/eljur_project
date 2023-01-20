@@ -1,0 +1,248 @@
+<DrawerClickableItem@MDNavigationDrawerItem>
+    focus_color: "#5e1f38" #цвет текста када курсор наводишь на кнопочки
+    text_color: "#f29097" #цвет текста на кнопочках
+    icon_color: "#ef687e" #цвет иконок которые я еще не вставил
+    ripple_color: "#ef687e" #не ебу
+    selected_color: "#ef687e" #цвет выбранной кнопочки
+
+#то чо ниже не нада это я еще не использую и не собираюсь
+<DrawerLabelItem@MDNavigationDrawerItem>
+    text_color: "#87cefa"
+    icon_color: "#4a4939"
+    focus_behavior: True
+    selected_color: "#4a4939"
+    _no_ripple_effect: True
+
+<Label@BoxLayout>
+    color: "#000000"
+#вот до сюда
+MDScreenManager:
+    auth_screen: auth
+    name: 'auth_manager'
+    MDScreen:
+        name: 'Autorization'
+        MDScreen:
+            id: auth
+            orientation: 'vertical'
+            login_input: login
+            password_input: password
+            error_label: error
+
+            # MDLabel:
+            #     text: str(root.req.status_code) + str(root.req.json())
+
+
+            MDLabel:
+                adaptive_size: True
+                pos_hint: {"center_y": .73, "center_x": .5}
+                text: "Авторизация"
+
+            MDLabel:
+                adaptive_size: True
+                id: error
+                text: ''
+                pos_hint: {'center_y': 0.50, 'center_x': 0.5}
+
+            MDTextField:
+                icon_left: "phone"
+                id: login
+                helper_text: 'Логин'
+                pos_hint: {'center_y': 0.65, 'center_x': 0.5}
+                size_hint: 0.5, 0.10
+                multiline: False
+
+            MDTextField:
+                icon_left: 'key'
+                id: password
+                helper_text: 'Пароль'
+                fill_color: 0, 0, 0, .4
+                pos_hint: {'center_y': 0.55, 'center_x': 0.5}
+                size_hint: 0.5, 0.10
+                multiline: False
+            
+            MDRaisedButton:
+                pos_hint: {'center_y': 0.4, 'center_x': 0.5}
+                size_hint: 0.25, 0.05
+                text: 'Войти'
+                on_press: 
+                    app.auth()
+
+    MDScreen:
+        name: 'Eljur'
+        MDNavigationLayout:
+
+            MDScreenManager:
+                MDScreen:
+                    MDTopAppBar:
+                    
+                        size_hint: 1, 0.10
+                        title: "Электронный журнал"
+                        elevation: 4
+                        pos_hint: {"top": 1}
+                        md_bg_color: "#ef687e"#цвет фона
+                        specific_text_color: "#5e1f38"#хз
+                        left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+
+                    MDNavigationLayout:
+                        id: navLayout
+                        MDScreenManager:
+                            id: screen_manager
+                            MDScreen:
+                                name: "profile"
+                                ScrollView:
+                                    pos_hint: {'top': 0.9}
+                                    do_scroll_x: False
+                                    do_scroll_y: True
+                                    BoxLayout:
+                                        size_hint_y: None
+                                        height: 1920
+                                        spacing: 10
+                                        orientation: 'vertical'
+                                        BoxLayout:
+                                            size_hint: 1, 0.2
+                                            Button:
+                                                text: 'Ava'
+                                                text_color: "#87cefa"
+                                            BoxLayout:
+                                                orientation: 'vertical'
+                                                Label:
+                                                    color: "#000000"
+                                                    text: app.read_profile()
+                                                Label:
+                                                    text_color: "#87cefa"
+                                                    text: '1'
+                                                Label:
+                                                    text_color: "#87cefa"
+                                                    text: 'lox'
+                                        BoxLayout:
+                                            size_hint: 1, 0.4
+                                            orientation: 'vertical'
+                                            Label:
+                                                text: 'Рейтинг'
+                                            Label:
+                                                text: '1'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '2'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '3'                                                    
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '4'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '5'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '6'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '7'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '8'
+                                                text_color: "#87cefa"
+                                            Label:
+                                                text: '9'
+                                                text_color: "#87cefa"
+                                        BoxLayout:
+                                            size_hint: 1, 0.4
+                                            orientation: 'vertical'    
+                                            Label:
+                                                text: 'Последние оценки'
+                                            Label:
+                                                text: '1'
+                                            Label:
+                                                text: '2'
+                                            Label:
+                                                text: '3'
+                                            Label:
+                                                text: '4'
+                                            Label:
+                                                text: '5'
+
+                            MDScreen:
+                                name: "diary"
+
+                                MDLabel:
+                                    text: "Diary"
+                                    halign: "center"
+
+                            MDScreen:
+                                name: "progress"
+
+                                MDLabel:
+                                    text: "Progress"
+                                    halign: "center"
+
+                            MDScreen:
+                                name: "achievements"
+
+                                MDLabel:
+                                    text: "Achievements"
+                                    halign: "center"
+
+                            MDScreen:
+                                name: "subjects"
+
+                                MDLabel:
+                                    text: "Subjects"
+                                    halign: "center"
+            MDNavigationDrawer:
+                id: nav_drawer
+                    
+                MDNavigationDrawerMenu:
+
+                    MDNavigationDrawerHeader:
+                        title:'123'
+                        title_color: "#ef687e" #Цвет этой штуки которая подкур артем балаллала
+                        text: ''
+                        spacing: "15dp"
+                        padding: "12dp", 0, 0, "56dp"
+
+                    MDNavigationDrawerLabel:
+                        text: "Дневник"
+
+                    DrawerClickableItem:
+                        text: "Профиль"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "profile"   
+
+                    DrawerClickableItem:
+                        text: "Дневник"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "diary"  
+
+                    DrawerClickableItem:
+                        text: "Успеваемость"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "progress"   
+
+                    DrawerClickableItem:
+                        text: "Достижения"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "achievements"   
+
+                    DrawerClickableItem:
+                        text: "Предметы"
+                        on_press:
+                            nav_drawer.set_state("close")
+                            screen_manager.current = "subjects"   
+
+                    MDNavigationDrawerDivider:
+
+                        # MDNavigationDrawerLabel:
+                        #     text: ""
+
+                        # DrawerLabelItem:
+                        #     icon: "information-outline"
+                        #     text: "Label"
+
+                        # DrawerLabelItem:
+                        #     icon: "information-outline"
+                        #     text: "Label"

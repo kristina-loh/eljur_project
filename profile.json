@@ -1,0 +1,921 @@
+{
+  "id": 1646,
+  "first_name": "Артем",
+  "last_name": "Подкур",
+  "patronymic": "Андреевич",
+  "contacts": "",
+  "description": "неуказано",
+  "active": 1,
+  "name": "Подкур Артем",
+  "secure_phone": "+7(***)***-**-39",
+  "full_name": "Подкур Артем Андреевич",
+  "avatar": "",
+  "class_name": "10в",
+  "leaders": [
+    {
+      "id": 381,
+      "name": "Безруких Ольга",
+      "full_name": "Безруких Ольга Юрьевна",
+      "first_name": "Ольга",
+      "last_name": "Безруких",
+      "patronymic": "Юрьевна",
+      "secure_phone": "+7(***)***-**-61",
+      "group_name": "10в"
+    }
+  ],
+  "flags": [
+    "student"
+  ],
+  "rating": {
+    "average": 7,
+    "totalCount": 194,
+    "counts": [
+      {
+        "rating": 9,
+        "count": 79
+      },
+      {
+        "rating": 8,
+        "count": 30
+      },
+      {
+        "rating": 7,
+        "count": 27
+      },
+      {
+        "rating": 6,
+        "count": 18
+      },
+      {
+        "rating": 5,
+        "count": 20
+      },
+      {
+        "rating": 4,
+        "count": 5
+      },
+      {
+        "rating": 3,
+        "count": 5
+      },
+      {
+        "rating": 2,
+        "count": 8
+      },
+      {
+        "rating": 1,
+        "count": 2
+      }
+    ]
+  },
+  "roles": [
+    {
+      "id": 1,
+      "name": "Учащийся",
+      "flags": [
+        "student"
+      ]
+    }
+  ],
+  "parents": [
+    {
+      "id": 864,
+      "first_name": "Вера",
+      "last_name": "Ишанова",
+      "patronymic": "Васильевна",
+      "contacts": "",
+      "description": "не указано",
+      "active": 1,
+      "name": "Ишанова Вера",
+      "secure_phone": "+7(***)***-**-33",
+      "full_name": "Ишанова Вера Васильевна",
+      "avatar": "",
+      "pivot": {
+        "id_user_student": 1646,
+        "id_user_parent": 864
+      }
+    },
+    {
+      "id": 1838,
+      "first_name": "Андрей",
+      "last_name": "Подкур",
+      "patronymic": "Владимирович",
+      "contacts": null,
+      "description": null,
+      "active": 1,
+      "name": "Подкур Андрей",
+      "secure_phone": "+7(***)***-**-08",
+      "full_name": "Подкур Андрей Владимирович",
+      "avatar": "",
+      "pivot": {
+        "id_user_student": 1646,
+        "id_user_parent": 1838
+      }
+    }
+  ],
+  "last_grades": [
+    {
+      "id": 56281,
+      "education_load_lesson_id": 17256,
+      "grade_id": 8,
+      "user_id": 1646,
+      "comment": "Решение задач",
+      "created_by": 346,
+      "created_at": "2023-01-17T00:56:16.000000Z",
+      "updated_at": "2023-01-17T00:56:16.000000Z",
+      "lesson": {
+        "id": 17256,
+        "education_load_id": 1246,
+        "grade_type_id": 1,
+        "date": "2023-01-17",
+        "lesson_id": 4,
+        "work_program_theme_id": null,
+        "name": "Преобразования сумм тригонометрических функций в произведение",
+        "readiness": 0,
+        "created_by": 346,
+        "created_at": "2023-01-17T00:54:14.000000Z",
+        "updated_by": 346,
+        "updated_at": "2023-01-17T00:54:14.000000Z",
+        "education_load": {
+          "id": 1246,
+          "education_load_type_id": 1,
+          "subject_id": 1,
+          "education_group_id": 352,
+          "grade_system_id": 1,
+          "work_program_id": null,
+          "name": null,
+          "hours": 8,
+          "users_excluded": [],
+          "created_at": "2022-09-05T14:11:05.000000Z",
+          "updated_at": "2022-09-05T14:11:05.000000Z",
+          "deleted_at": null,
+          "subject": {
+            "id": 1,
+            "name": "Математика",
+            "short_name": "Мат.",
+            "in_cert": true,
+            "color": "#aff16a",
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null
+          }
+        },
+        "lesson": {
+          "id": 4,
+          "number": 4,
+          "name": "4 урок",
+          "time_start": "11:00",
+          "time_end": "11:40",
+          "year_id": 2,
+          "updated_at": "2022-09-01T03:28:42.000000Z"
+        }
+      },
+      "owner": {
+        "id": 346,
+        "first_name": "Ирина",
+        "last_name": "Волохо",
+        "patronymic": "Вячеславовна",
+        "contacts": "",
+        "description": "Учительвысшейкатегории",
+        "active": 1,
+        "name": "Волохо Ирина",
+        "secure_phone": "+7(***)***-**-16",
+        "full_name": "Волохо Ирина Вячеславовна",
+        "avatar": ""
+      },
+      "grade": {
+        "id": 8,
+        "grade_system_id": 1,
+        "name": "Шестерка",
+        "short_name": "6",
+        "cost": 6
+      }
+    },
+    {
+      "id": 56228,
+      "education_load_lesson_id": 16025,
+      "grade_id": 4,
+      "user_id": 1646,
+      "comment": "Решение задач",
+      "created_by": 346,
+      "created_at": "2023-01-16T15:01:38.000000Z",
+      "updated_at": "2023-01-16T15:01:38.000000Z",
+      "lesson": {
+        "id": 16025,
+        "education_load_id": 1246,
+        "grade_type_id": 1,
+        "date": "2023-01-10",
+        "lesson_id": 5,
+        "work_program_theme_id": null,
+        "name": "Формулы понижения степени",
+        "readiness": 0,
+        "created_by": 346,
+        "created_at": "2023-01-10T03:54:15.000000Z",
+        "updated_by": 346,
+        "updated_at": "2023-01-10T03:54:15.000000Z",
+        "education_load": {
+          "id": 1246,
+          "education_load_type_id": 1,
+          "subject_id": 1,
+          "education_group_id": 352,
+          "grade_system_id": 1,
+          "work_program_id": null,
+          "name": null,
+          "hours": 8,
+          "users_excluded": [],
+          "created_at": "2022-09-05T14:11:05.000000Z",
+          "updated_at": "2022-09-05T14:11:05.000000Z",
+          "deleted_at": null,
+          "subject": {
+            "id": 1,
+            "name": "Математика",
+            "short_name": "Мат.",
+            "in_cert": true,
+            "color": "#aff16a",
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null
+          }
+        },
+        "lesson": {
+          "id": 5,
+          "number": 5,
+          "name": "5 урок",
+          "time_start": "11:50",
+          "time_end": "12:30",
+          "year_id": 2,
+          "updated_at": "2022-09-01T03:28:43.000000Z"
+        }
+      },
+      "owner": {
+        "id": 346,
+        "first_name": "Ирина",
+        "last_name": "Волохо",
+        "patronymic": "Вячеславовна",
+        "contacts": "",
+        "description": "Учительвысшейкатегории",
+        "active": 1,
+        "name": "Волохо Ирина",
+        "secure_phone": "+7(***)***-**-16",
+        "full_name": "Волохо Ирина Вячеславовна",
+        "avatar": ""
+      },
+      "grade": {
+        "id": 4,
+        "grade_system_id": 1,
+        "name": "Двойка",
+        "short_name": "2",
+        "cost": 2
+      }
+    },
+    {
+      "id": 55521,
+      "education_load_lesson_id": 16508,
+      "grade_id": 7,
+      "user_id": 1646,
+      "comment": "Ответ на уроке",
+      "created_by": 346,
+      "created_at": "2023-01-13T10:50:09.000000Z",
+      "updated_at": "2023-01-13T10:50:09.000000Z",
+      "lesson": {
+        "id": 16508,
+        "education_load_id": 1246,
+        "grade_type_id": 1,
+        "date": "2023-01-13",
+        "lesson_id": 5,
+        "work_program_theme_id": null,
+        "name": "Расстояние от точки до фигуры",
+        "readiness": 0,
+        "created_by": 346,
+        "created_at": "2023-01-13T04:08:43.000000Z",
+        "updated_by": 346,
+        "updated_at": "2023-01-13T04:08:43.000000Z",
+        "education_load": {
+          "id": 1246,
+          "education_load_type_id": 1,
+          "subject_id": 1,
+          "education_group_id": 352,
+          "grade_system_id": 1,
+          "work_program_id": null,
+          "name": null,
+          "hours": 8,
+          "users_excluded": [],
+          "created_at": "2022-09-05T14:11:05.000000Z",
+          "updated_at": "2022-09-05T14:11:05.000000Z",
+          "deleted_at": null,
+          "subject": {
+            "id": 1,
+            "name": "Математика",
+            "short_name": "Мат.",
+            "in_cert": true,
+            "color": "#aff16a",
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null
+          }
+        },
+        "lesson": {
+          "id": 5,
+          "number": 5,
+          "name": "5 урок",
+          "time_start": "11:50",
+          "time_end": "12:30",
+          "year_id": 2,
+          "updated_at": "2022-09-01T03:28:43.000000Z"
+        }
+      },
+      "owner": {
+        "id": 346,
+        "first_name": "Ирина",
+        "last_name": "Волохо",
+        "patronymic": "Вячеславовна",
+        "contacts": "",
+        "description": "Учительвысшейкатегории",
+        "active": 1,
+        "name": "Волохо Ирина",
+        "secure_phone": "+7(***)***-**-16",
+        "full_name": "Волохо Ирина Вячеславовна",
+        "avatar": ""
+      },
+      "grade": {
+        "id": 7,
+        "grade_system_id": 1,
+        "name": "Пятерка",
+        "short_name": "5",
+        "cost": 5
+      }
+    },
+    {
+      "id": 55075,
+      "education_load_lesson_id": 16032,
+      "grade_id": 7,
+      "user_id": 1646,
+      "comment": "Ответ на уроке",
+      "created_by": 344,
+      "created_at": "2023-01-12T07:34:07.000000Z",
+      "updated_at": "2023-01-12T07:34:07.000000Z",
+      "lesson": {
+        "id": 16032,
+        "education_load_id": 1258,
+        "grade_type_id": 1,
+        "date": "2023-01-12",
+        "lesson_id": 4,
+        "work_program_theme_id": null,
+        "name": "Наука",
+        "readiness": 0,
+        "created_by": 344,
+        "created_at": "2023-01-10T04:12:42.000000Z",
+        "updated_by": 344,
+        "updated_at": "2023-01-10T04:12:42.000000Z",
+        "education_load": {
+          "id": 1258,
+          "education_load_type_id": 1,
+          "subject_id": 13,
+          "education_group_id": 352,
+          "grade_system_id": 1,
+          "work_program_id": null,
+          "name": null,
+          "hours": 2,
+          "users_excluded": [],
+          "created_at": "2022-09-05T14:20:09.000000Z",
+          "updated_at": "2022-09-05T14:20:09.000000Z",
+          "deleted_at": null,
+          "subject": {
+            "id": 13,
+            "name": "Обществознание",
+            "short_name": "Общ.",
+            "in_cert": true,
+            "color": "#ab5e34",
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null
+          }
+        },
+        "lesson": {
+          "id": 4,
+          "number": 4,
+          "name": "4 урок",
+          "time_start": "11:00",
+          "time_end": "11:40",
+          "year_id": 2,
+          "updated_at": "2022-09-01T03:28:42.000000Z"
+        }
+      },
+      "owner": {
+        "id": 344,
+        "first_name": "Ольга",
+        "last_name": "Чернова",
+        "patronymic": "Борисовна",
+        "contacts": null,
+        "description": null,
+        "active": 1,
+        "name": "Чернова Ольга",
+        "secure_phone": "+7(***)***-**-68",
+        "full_name": "Чернова Ольга Борисовна",
+        "avatar": ""
+      },
+      "grade": {
+        "id": 7,
+        "grade_system_id": 1,
+        "name": "Пятерка",
+        "short_name": "5",
+        "cost": 5
+      }
+    },
+    {
+      "id": 54456,
+      "education_load_lesson_id": 12957,
+      "grade_id": 10,
+      "user_id": 1646,
+      "comment": "Решение задач",
+      "created_by": 381,
+      "created_at": "2022-12-29T06:52:16.000000Z",
+      "updated_at": "2022-12-29T06:52:16.000000Z",
+      "lesson": {
+        "id": 12957,
+        "education_load_id": 1240,
+        "grade_type_id": 1,
+        "date": "2022-12-05",
+        "lesson_id": 4,
+        "work_program_theme_id": null,
+        "name": "-",
+        "readiness": 0,
+        "created_by": 381,
+        "created_at": "2022-12-09T03:14:13.000000Z",
+        "updated_by": 381,
+        "updated_at": "2022-12-09T03:14:13.000000Z",
+        "education_load": {
+          "id": 1240,
+          "education_load_type_id": 1,
+          "subject_id": 4,
+          "education_group_id": 352,
+          "grade_system_id": 1,
+          "work_program_id": null,
+          "name": null,
+          "hours": 4,
+          "users_excluded": [
+            1633,
+            1634,
+            1635,
+            1869,
+            1640,
+            1642,
+            1647,
+            1651,
+            2309
+          ],
+          "created_at": "2022-09-05T14:09:21.000000Z",
+          "updated_at": "2022-09-23T04:52:57.000000Z",
+          "deleted_at": null,
+          "subject": {
+            "id": 4,
+            "name": "Информатика",
+            "short_name": "Инф-ка",
+            "in_cert": true,
+            "color": "#3002d7",
+            "created_at": null,
+            "updated_at": null,
+            "deleted_at": null
+          }
+        },
+        "lesson": {
+          "id": 4,
+          "number": 4,
+          "name": "4 урок",
+          "time_start": "11:00",
+          "time_end": "11:40",
+          "year_id": 2,
+          "updated_at": "2022-09-01T03:28:42.000000Z"
+        }
+      },
+      "owner": {
+        "id": 381,
+        "first_name": "Ольга",
+        "last_name": "Безруких",
+        "patronymic": "Юрьевна",
+        "contacts": null,
+        "description": null,
+        "active": 1,
+        "name": "Безруких Ольга",
+        "secure_phone": "+7(***)***-**-61",
+        "full_name": "Безруких Ольга Юрьевна",
+        "avatar": ""
+      },
+      "grade": {
+        "id": 10,
+        "grade_system_id": 1,
+        "name": "Восьмерка",
+        "short_name": "8",
+        "cost": 8
+      }
+    }
+  ],
+  "exemptions": [],
+  "medicals": [],
+  "student_achieve_stage_results": [
+    {
+      "id": 213,
+      "achieve_stage_id": 203,
+      "achieve_result_id": 8,
+      "cost": "30.00",
+      "created_at": "2022-01-11T05:44:44.000000Z",
+      "updated_at": "2022-01-11T05:47:46.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 213
+      }
+    },
+    {
+      "id": 526,
+      "achieve_stage_id": 438,
+      "achieve_result_id": 8,
+      "cost": "0.00",
+      "created_at": "2022-04-15T05:03:34.000000Z",
+      "updated_at": "2022-04-15T05:10:08.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 526
+      }
+    },
+    {
+      "id": 737,
+      "achieve_stage_id": 604,
+      "achieve_result_id": 8,
+      "cost": "0.00",
+      "created_at": "2022-10-31T04:29:17.000000Z",
+      "updated_at": "2022-10-31T04:43:33.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 737
+      }
+    },
+    {
+      "id": 771,
+      "achieve_stage_id": 619,
+      "achieve_result_id": 8,
+      "cost": "0.00",
+      "created_at": "2022-11-07T10:05:46.000000Z",
+      "updated_at": "2022-11-07T10:14:12.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 771
+      }
+    },
+    {
+      "id": 849,
+      "achieve_stage_id": 664,
+      "achieve_result_id": 8,
+      "cost": "0.50",
+      "created_at": "2022-11-26T05:02:07.000000Z",
+      "updated_at": "2022-11-26T05:05:01.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 849
+      }
+    },
+    {
+      "id": 874,
+      "achieve_stage_id": 677,
+      "achieve_result_id": 8,
+      "cost": "0.00",
+      "created_at": "2022-11-30T02:50:41.000000Z",
+      "updated_at": "2022-12-24T05:54:44.000000Z",
+      "pivot": {
+        "user_id": 1646,
+        "achieve_stage_result_id": 874
+      }
+    }
+  ],
+  "student_loads": [
+    {
+      "id": 1238,
+      "education_load_type_id": 1,
+      "subject_id": 14,
+      "education_group_id": 352,
+      "grade_system_id": 2,
+      "work_program_id": null,
+      "name": null,
+      "hours": 3,
+      "users_excluded": [
+        1633,
+        1634,
+        1635,
+        1869,
+        2308,
+        1640,
+        1643,
+        1647,
+        1651,
+        2309,
+        1652
+      ],
+      "created_at": "2022-09-05T14:08:43.000000Z",
+      "updated_at": "2022-09-13T07:18:51.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1240,
+      "education_load_type_id": 1,
+      "subject_id": 4,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 4,
+      "users_excluded": [
+        1633,
+        1634,
+        1635,
+        1869,
+        1640,
+        1642,
+        1647,
+        1651,
+        2309
+      ],
+      "created_at": "2022-09-05T14:09:21.000000Z",
+      "updated_at": "2022-09-23T04:52:57.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1242,
+      "education_load_type_id": 1,
+      "subject_id": 11,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 3,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:09:59.000000Z",
+      "updated_at": "2022-09-05T14:09:59.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1243,
+      "education_load_type_id": 1,
+      "subject_id": 78,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 1,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:10:11.000000Z",
+      "updated_at": "2022-09-05T14:10:11.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1244,
+      "education_load_type_id": 1,
+      "subject_id": 10,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:10:22.000000Z",
+      "updated_at": "2022-09-05T14:10:22.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1245,
+      "education_load_type_id": 1,
+      "subject_id": 15,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 1,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:10:49.000000Z",
+      "updated_at": "2022-09-05T14:10:49.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1246,
+      "education_load_type_id": 1,
+      "subject_id": 1,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 8,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:11:05.000000Z",
+      "updated_at": "2022-09-05T14:11:05.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1249,
+      "education_load_type_id": 1,
+      "subject_id": 92,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 1,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:12:43.000000Z",
+      "updated_at": "2022-09-05T14:12:43.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1253,
+      "education_load_type_id": 1,
+      "subject_id": 6,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 6,
+      "users_excluded": [
+        1634,
+        2308,
+        1640,
+        1642,
+        1643,
+        1645,
+        1649,
+        1650,
+        2309,
+        1654
+      ],
+      "created_at": "2022-09-05T14:18:43.000000Z",
+      "updated_at": "2022-09-07T02:02:32.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1255,
+      "education_load_type_id": 1,
+      "subject_id": 12,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:19:19.000000Z",
+      "updated_at": "2022-09-05T14:19:19.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1256,
+      "education_load_type_id": 1,
+      "subject_id": 2,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:19:37.000000Z",
+      "updated_at": "2022-09-05T14:19:37.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1257,
+      "education_load_type_id": 1,
+      "subject_id": 3,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 1,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:19:57.000000Z",
+      "updated_at": "2022-09-05T14:19:57.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1258,
+      "education_load_type_id": 1,
+      "subject_id": 13,
+      "education_group_id": 352,
+      "grade_system_id": 1,
+      "work_program_id": null,
+      "name": null,
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:20:09.000000Z",
+      "updated_at": "2022-09-05T14:20:09.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1241,
+      "education_load_type_id": 2,
+      "subject_id": 4,
+      "education_group_id": 352,
+      "grade_system_id": 3,
+      "work_program_id": null,
+      "name": "Избранные главы информатики",
+      "hours": 2,
+      "users_excluded": [
+        1633,
+        1634,
+        1635,
+        1869,
+        1640,
+        1642,
+        1647,
+        1651,
+        2309
+      ],
+      "created_at": "2022-09-05T14:09:41.000000Z",
+      "updated_at": "2022-09-23T04:54:14.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1247,
+      "education_load_type_id": 2,
+      "subject_id": 1,
+      "education_group_id": 352,
+      "grade_system_id": 3,
+      "work_program_id": null,
+      "name": "Дополнительные главы математики",
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:11:44.000000Z",
+      "updated_at": "2022-09-06T02:09:29.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    },
+    {
+      "id": 1248,
+      "education_load_type_id": 3,
+      "subject_id": 1,
+      "education_group_id": 352,
+      "grade_system_id": 3,
+      "work_program_id": null,
+      "name": "Финансовая математика",
+      "hours": 2,
+      "users_excluded": [],
+      "created_at": "2022-09-05T14:12:01.000000Z",
+      "updated_at": "2022-09-06T02:09:43.000000Z",
+      "deleted_at": null,
+      "laravel_through_key": 1646
+    }
+  ],
+  "education_groups": [
+    {
+      "id": 352,
+      "year_id": 2,
+      "year_period_category_id": 1,
+      "name": "10в",
+      "number": 10,
+      "mixed_filter": null,
+      "created_at": "2020-08-30T16:19:50.000000Z",
+      "updated_at": "2022-08-25T06:37:20.000000Z",
+      "deleted_at": null,
+      "last_active_year_period": {
+        "id": 7,
+        "year_id": 2,
+        "year_period_category_id": 1,
+        "name": "II полугодие",
+        "from": "2023-01-09",
+        "to": "2023-05-31",
+        "closed_at": "2023-06-05 00:00:00"
+      },
+      "pivot": {
+        "user_id": 1646,
+        "education_group_id": 352,
+        "excluded_at": null,
+        "appended_at": "2022-08-25 14:20:02"
+      },
+      "admins": [
+        {
+          "id": 381,
+          "first_name": "Ольга",
+          "last_name": "Безруких",
+          "patronymic": "Юрьевна",
+          "contacts": null,
+          "description": null,
+          "active": 1,
+          "name": "Безруких Ольга",
+          "secure_phone": "+7(***)***-**-61",
+          "full_name": "Безруких Ольга Юрьевна",
+          "avatar": "",
+          "pivot": {
+            "education_group_id": 352,
+            "user_id": 381
+          }
+        }
+      ]
+    }
+  ]
+}
