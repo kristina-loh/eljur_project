@@ -8,7 +8,8 @@ from kivy.config import ConfigParser, Config
 from  kivymd.uix.screenmanager import MDScreenManager
 import requests
 import json
-import os.path
+
+
 
 def get_token(login, password):
     payload = {
@@ -49,24 +50,6 @@ class EljurApp(MDApp):
             'authorize': 'False'
             }
         )
-    
-    #вся вот эта функция абсолютно бесполезна и работает как ебучая хуйня:)):):):):):)
-    # def get_profile(self):
-    #     profile_info = EljurApp().profile_info
-    #     Config.read(EljurApp().get_application_config())
-    #     login = Config.get('signin', 'login')
-    #     password = Config.get('signin', 'password')
-    #     payload = {
-    #         'phone': login,
-    #         'password': password,
-    #         'remember': False,
-    #     } 
-    #     token = requests.session().post('https://shk24.ru/api/v1/auth/login', json = payload).json()['accessToken']
-    #     url = 'https://shk24.ru/api/v1/users/1646/profile'
-    #     profile = requests.session().get(url, auth=BearerAuth(token)).json()
-        
-    #     profile_info['full_name'] = profile['last_name'] + ' ' + profile['first_name']
-    #     profile_info['class'] = profile['class_name']
 
 
 
@@ -79,11 +62,10 @@ class EljurApp(MDApp):
     def auth(self):
         login_input = MDApp.get_running_app().root.auth_screen.login_input
         password_input = MDApp.get_running_app().root.auth_screen.password_input
-        error_label = MDApp.get_running_app().root.auth_screen.error
+        error_label = MDApp.get_running_app().root.auth_screen.error_label
 
         if login_input.text == '' or password_input.text == '':
             error_label.text = 'Поле Пароль/Телефон обязательно для заполнения.'
-
         else:
             session = requests.session()
             payload = {
@@ -91,42 +73,24 @@ class EljurApp(MDApp):
                 'password': password_input.text,
                 'remember': 'False'
             }
-            req = session.post('https://shk24.ru/api/v1/auth/login', json = payload)
-            
-
-
-        # if self.config.get('signin', 'authorize') == 'False':
-        #     self.config.set('signin', 'login', MDApp.get_running_app().root.login_input.text)
-        #     self.config.set('signin', 'password', MDApp.get_running_app().root.password_input.text)
-        #     self.config.set('signin', 'authorize', 'True')
-        #     self.config.write()
-        # else:
-        #     MDApp.get_running_app().root.password_input.text = self.config.get('signin', 'password')
-        #     MDApp.get_running_app().root.login_input.text = self.config.get('signin', 'login')
-        # payload = {
-        #     'phone': MDApp.get_running_app().root.login_input.text,
-        #     'password': MDApp.get_running_app().root.password_input.text,
-        #     'remember': False,
-        # }
-        # session = requests.session()
-        # r = session.post('https://shk24.ru/api/v1/auth/login', json = payload)
-        # if str(r) == '<Response [422]>':
-        #     MDApp.get_running_app().root.error_label.text = 'Имя пользователя и пароль не совпадают.'
-        #     MDApp.get_running_app().root.error_label.color = (255/255, 20/255, 83/255, 1)
-           
-        # elif str(r) == '<Response [200]>':
-        #    MDApp.get_running_app().root.error_label.text = 'Успешно'
-
-        #сюда проверку авторизации вставить надо
-        #load_profile(get_token('9832655739', 'mamasha228'))
-        # self.root.current = 'Eljur'
-
-
-    # def on_start(self):
-    #     print(EljurApp().profile_info)
-        
-    #     self.get_profile()
-    #     print(EljurApp().profile_info)
+            try:
+                req = session.post('https://shk24.ru/api/v1/auth/login', json = payload)
+                print('try')
+                if req.status_code == 422:
+                    error_label.text = 'Имя пользователя и пароль не совпадают.'
+                else:
+                    self.config.set('signin', 'login', login_input.text)
+                    self.config.set('signin', 'password', password_input.text)
+                    self.config.set('signin', 'authorize', 'True')
+                    self.config.write()
+                    self.root.current = 'Eljur'
+            except requests.exceptions.ConnectionError:
+                error_label.text = 'Отсутствует подключение к интернету'
+    
+    def on_start(self):
+        config = self.config
+        if config.get('signin', 'authorize') == 'True':
+            self.root.current = 'Eljur'
 
     def build(self):
         # #и сюда тож проверку авторизации(но чо сюда не факт возможно on_start)
